@@ -1,6 +1,6 @@
 {
   "name": "@jasonlamv-t/rehype-code-title",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Rehype plugin to add code block title in pre element as div element.",
   "type": "module",
   "main": "index.js",

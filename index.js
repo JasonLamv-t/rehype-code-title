@@ -3,16 +3,25 @@ import { visit } from 'unist-util-visit';
 export default function rehypeCodeTitle() {
   return (tree) => {
     visit(tree, 'element', (node, index, parentNode) => {
-      if (!parentNode || node.tagName !== 'code') return;
+      if (
+        !parentNode ||
+        parentNode.tagName !== 'pre' ||
+        node.tagName !== 'code'
+      )
+        return;
 
       const pre = parentNode;
       const code = node;
 
-      const indexOfClassNameWithSemi = code.properties.className.findIndex(
+      const indexOfClassNameWithSemi = code.properties.className?.findIndex(
         (cls) => cls.includes(':')
       );
 
-      if (indexOfClassNameWithSemi === -1) return;
+      if (
+        indexOfClassNameWithSemi === -1 ||
+        indexOfClassNameWithSemi === undefined
+      )
+        return;
 
       const classNameWithSemi =
         code.properties.className[indexOfClassNameWithSemi];
