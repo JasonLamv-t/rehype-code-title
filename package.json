@@ -26,7 +26,6 @@
     "url": "https://github.com/JasonLamv-t/rehype-code-title/issues"
   },
   "homepage": "https://github.com/JasonLamv-t/rehype-code-title#readme",
-  "publishConfig": {
-    "registry": "https://github.com/JasonLamv-t/rehype-code-title.git"
-  }
+  "types": "./index.d.ts",
+  "devDependencies": {}
 }
