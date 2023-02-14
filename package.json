@@ -1,0 +1,32 @@
+{
+  "name": "@jasonlamv-t/rehype-code-title",
+  "version": "0.0.1",
+  "description": "Rehype plugin to add code block title in pre element as div element.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Lam <jasonlamv-t@hotmail.com> (https://jasonlam.cc)",
+  "license": "MIT",
+  "dependencies": {
+    "unist-util-visit": "^4.1.2"
+  },
+  "keywords": [
+    "rehype",
+    "code",
+    "title",
+    "markdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JasonLamv-t/rehype-code-title.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JasonLamv-t/rehype-code-title/issues"
+  },
+  "homepage": "https://github.com/JasonLamv-t/rehype-code-title#readme",
+  "publishConfig": {
+    "registry": "https://github.com/JasonLamv-t/rehype-code-title.git"
+  }
+}
